@@ -1,0 +1,13 @@
+<h3>Please sign in:</h3>
+
+<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+  <%= label_tag "Name:" %>
+  <%= text_field_tag 'user[name]' %><br><br>
+  <%= label_tag "Password:" %>
+  <%= text_field_tag 'user[password]' %><br><br>
+
+  <%= label_tag "Check box if you are an admin" %>
+  <%= check_box_tag 'user[admin]', true, false %><br><br> 
+
+  <%= submit_tag "Sign In" %>
+<% end %>

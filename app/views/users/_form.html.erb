@@ -1,0 +1,18 @@
+<%= form_for @user do |f| %>
+<%= f.label :name %><br>
+<%= f.text_field :name %><br>
+<%= f.label :height %><br>
+<%= f.text_field :height %><br>
+<%= f.label :happiness %><br>
+<%= f.number_field :happiness %><br>
+<%= f.label :nausea %><br>
+<%= f.number_field :nausea %><br>
+<%= f.label :tickets %><br>
+<%= f.number_field :tickets %><br>
+<%= f.label :password %><br>
+<%= f.password_field :password %><br>
+<%= f.label "Check box if you are an admin" %>
+<%= f.check_box :admin, {}, "true", "false" %><br>
+
+<%= f.submit %>
+<% end %>
